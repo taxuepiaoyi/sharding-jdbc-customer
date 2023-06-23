@@ -1,0 +1,9 @@
+
+server:
+  port: 8095
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.bruce.shardingjdbc.customer.entity
+  configuration:
+    map-underscore-to-camel-case: true
