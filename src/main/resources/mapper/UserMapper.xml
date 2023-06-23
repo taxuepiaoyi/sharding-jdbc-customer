@@ -22,19 +22,19 @@
         from user u
         where
           1 = 1
-        <if test="#{userQuery.userId !=null}" >
+        <if test="userQuery.userId !=null" >
             and u.user_id = #{userQuery.userId}
         </if>
-        <if test="#{userQuery.userName !=null and userQuery.userName != ''}" >
+        <if test="userQuery.userName !=null and userQuery.userName != ''" >
             and u.user_name like concat('%', #{userQuery.userName},'%')
         </if>
-        <if test="#{userQuery.sex !=null}" >
+        <if test="userQuery.sex !=null" >
             and u.sex = #{userQuery.sex}
         </if>
-        <if test="#{userQuery.age !=null}" >
+        <if test="userQuery.age !=null" >
             and u.age = #{userQuery.age}
         </if>
-        <if test="#{userQuery.status !=null}" >
+        <if test="userQuery.status !=null" >
             and u.status = #{userQuery.status}
         </if>
     </select>

@@ -5,7 +5,7 @@ import com.bruce.shardingjdbc.customer.query.UserQueryDTO;
 
 import java.util.List;
 
-public interface CustomerService {
+public interface UserService {
 
     List<UserDTO> queryUserList(UserQueryDTO userQueryDTO) ;
 
